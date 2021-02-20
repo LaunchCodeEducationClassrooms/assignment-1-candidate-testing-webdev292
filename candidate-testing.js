@@ -50,13 +50,21 @@ function gradeQuiz(candidateAnswers) {
     console.log(">>>> Status is: Passed <<<<")
   }
 
-  if(grade === 2){
-    candidatePercentage = 40;
+  if (grade === 0) {
+    return 0;
+  } else if (grade === 1) {
+    return 20;
+  } else if (grade === 2) {
+    return 40;
+  } else if (grade === 3) {
+    return 60;
+  } else if (grade === 4) {
+    return 80;
+  } else if (grade === 5) {
+    return 100;
   }
 
-  if(grade === 5){
-    candidatePercentage = 100;
-  }
+  return 0;
 }
 
 function runProgram() {
