@@ -33,6 +33,7 @@ function askQuestions() {
 function gradeQuiz(candidateAnswers) {
   let grade = 0;
   let candidatePercentage = '';
+  console.log('Candidate answers from Test is ', candidateAnswers);
   candidateAnswers.forEach(function(ca) {
     console.log('QA object is ', ca);
     if (ca.candAns === ca.corAns) {
