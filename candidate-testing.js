@@ -36,7 +36,10 @@ function gradeQuiz(candidateAnswers) {
   console.log('Candidate answers from Test is ', candidateAnswers);
   candidateAnswers.forEach(function(ca, i) {
     console.log('QA object is ', ca);
-    if (ca.toUpperCase() === correctAnswers[i].toUpperCase() ||(ca&&ca.candAns.toUpperCase() === correctAnswers[i].toUpperCase())) {
+    if(ca && ca.candAns){
+      ca = ca.candAns;
+    }
+    if (ca.toUpperCase() === correctAnswers[i].toUpperCase()) {
       grade++;
     }
   });
