@@ -34,9 +34,9 @@ function gradeQuiz(candidateAnswers) {
   let grade = 0;
   let candidatePercentage = '';
   console.log('Candidate answers from Test is ', candidateAnswers);
-  candidateAnswers.forEach(function(ca) {
+  candidateAnswers.forEach(function(ca, i) {
     console.log('QA object is ', ca);
-    if (ca.candAns === ca.corAns) {
+    if (ca.candAns === correctAnswers[i]) {
       grade++;
     }
   });
