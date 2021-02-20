@@ -23,10 +23,6 @@ function askForName() {
 }
 
 function askQuestions() {
-  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-  /*question = input.question("Who was the first American woman inspace? ");*/
-  //let candidateAnswers = [question, correctAnswers];
-
   for (let i = 0; i < questions.length; i++) {
     const answer = input.question(questions[i] + " :");
     candidateAnswers.push({ q: questions[i], candAns: answer, corAns: correctAnswers[i] })
