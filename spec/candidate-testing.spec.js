@@ -1,7 +1,6 @@
 const solution = require('../candidate-testing');
 
 describe("Candidate Testing solution", function() {
-  console.log("***************** Solutin is ", solution);
 	// PART 1 // 
 	// candidateName tests //
 	it("candidateName is a string", function() {
@@ -62,7 +61,9 @@ describe("Candidate Testing solution", function() {
   // gradeQuiz tests //
   it("gradeQuiz returns a 0 for all wrong answers", function() {
     solution.candidateAnswers = ["foo", "bar", "baz", "lur", "man"];
-    expect(solution.gradeQuiz(solution.candidateAnswers)).toBe(0);
+    let grade = solution.gradeQuiz(solution.candidateAnswers);
+    console.log('Grade in Test case is ', grade);
+    expect(grade).toBe(0);
 	});
 
   it("gradeQuiz returns 100 for all correct answers", function() {
