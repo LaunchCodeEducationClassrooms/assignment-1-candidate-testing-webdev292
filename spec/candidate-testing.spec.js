@@ -1,7 +1,7 @@
 const solution = require('../candidate-testing');
 
 describe("Candidate Testing solution", function() {
-
+  console.log("***************** Solutin is ", solution);
 	// PART 1 // 
 	// candidateName tests //
 	it("candidateName is a string", function() {
